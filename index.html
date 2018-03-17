@@ -10,7 +10,7 @@
 
 		body {
 			background: url("https://www.backpacker.com/.image/t_share/MTUwMjg2MzU4NDE2NDY2OTYx/33438920365_150e2dd637_k.jpg");
-			background size: cover; 
+			background-size: cover; 
      background-attachment: fixed;
      background-size: 100% 100%;
              color: black;
@@ -177,75 +177,77 @@ body {
 	<div class="container">
 			
 	<body>
-		<script>
-			function wpgood_nav_search( $items, $args ) {
-    $items .= '<li>' . get_search_form( false ) . '</li>';
-    return $items;
-}
-		</script>
+	
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Acadia National Park</a>
-  <a href="#">American Samoa</a>
-  <a href="#">Arches</a>
-  <a href="#">Badlands</a>
-	<a href="#">Big Bend</a>
-  <a href="#">Biscayne</a>
-  <a href="#">Black Canyon of the Gunnison</a>
-  <a href="#">Bryce Canyon</a>
-	<a href="#">Canyonlands</a>
-  <a href="#">Capitol Reef</a>
-  <a href="#">Carlsbad Caverns</a>
-  <a href="#">Channel Islands</a>
-	<a href="#">Congaree</a>
-  <a href="#">Crater Lake</a>
-  <a href="#">Cuyahoga Valley</a>
-  <a href="#">Death Valley</a>
-	<a href="#">Denali</a>
-  <a href="#">Dry Tortugas</a>
-  <a href="#">Everglades</a>
-  <a href="#">Gates of the Arctic</a>
-	<a href="#">Gateway</a>
-  <a href="#">Glacier</a>
-  <a href="#">Glacier Bay</a>
-  <a href="#">Grand Canyon</a>
-	<a href="#">Grand Teton</a>
-  <a href="#">Great Basin</a>
-  <a href="#">Great Sand Dunds/a>
-  <a href="#">Great Smoky Mountains</a>
-	<a href="#">Guadalupe Mountains</a>
-  <a href="#">Haleakalā </a>
-  <a href="#">Hawai'i Volcanoes</a>
-  <a href="#">Hot Springs</a>
-	<a href="#">Isle Royale</a>
-  <a href="#">Joshua Tree</a>
-  <a href="#">Katmai</a>
-  <a href="#">Kenai Fjords</a>
-	<a href="#">Kings Canyon</a>
-  <a href="#">Kobuk Valley</a>
-  <a href="#">Lake Clark</a>
-  <a href="#">Lassen Volcanic</a>
-	<a href="#">Mammoth Cave</a>
-  <a href="#">Mesa Verde</a>
-  <a href="#">Mount Rainer</a>
-  <a href="#">North Cascades</a>
-	<a href="#">Olympic</a>
-  <a href="#">Petrified Forest</a>
-  <a href="#">Pinnacles</a>
-  <a href="#">Redwood</a>
-	<a href="#">Rocky Mountain</a>
-  <a href="#">Saguaro</a>
-  <a href="#">Sequoia</a>
-  <a href="#">Contact</a>
-	<a href="#">Shenandoah</a>
-  <a href="#">Theodore Roosevelt</a>
-  <a href="#">Virign Islands</a>
-  <a href="#">Voyageurs</a>
-	  <a href="#">Wind Cave</a>
-	<a href="#">Wrangell- St. Elias</a>
-  <a href="#">Yellowstone</a>
-  <a href="#">Yosemite</a>
-  <a href="https://loopnova7305.github.io/upgraded-journey.github.io/Zion.html">Zion</a>
+	<input type="text" id="nationalPark" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+	<ul id="nationalPark">
+		
+		<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+		<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+		<li><<a href="#">Acadia National Park</a></li>
+		<li><a href="#">American Samoa</a></li>
+ <li> <a href="#">Arches</a></li>
+ <li> <a href="#">Badlands</a></li>
+	<li><a href="#">Big Bend</a></li>
+ <li> <a href="#">Biscayne</a></li>
+ <li> <a href="#">Black Canyon of the Gunnison</a></li>
+  <li><a href="#">Bryce Canyon</a></li>
+	<li><a href="#">Canyonlands</a></li>
+<li> <a href="#">Capitol Reef</a></li>
+  <li><a href="#">Carlsbad Caverns</a></li>
+  <li><a href="#">Channel Islands</a></li>
+	<a href="#">Congaree</a></li>
+ <li> <a href="#">Crater Lake</a></li>
+<li>  <a href="#">Cuyahoga Valley</a></li>
+  <li><a href="#">Death Valley</a></li>
+	<a href="#">Denali</a></li>
+  <li><a href="#">Dry Tortugas</a></li>
+  <li><a href="#">Everglades</a></li>
+ <li> <a href="#">Gates of the Arctic</a></li>
+<li>	<a href="#">Gateway</a></li>
+<li>  <a href="#">Glacier</a></li>
+<li>  <a href="#">Glacier Bay</a></li>
+<li>  <a href="#">Grand Canyon</a></li>
+<li>	<a href="#">Grand Teton</a></li>
+  <li><a href="#">Great Basin</a></li>
+ <li> <a href="#" id="great sand dunes">Great Sand Dunds</a></li>
+  <li><a href="#">Great Smoky Mountains</a></li>
+<li>	<a href="#">Guadalupe Mountains</a></li>
+  <li><a href="#">Haleakalā </a></li>
+ <li> <a href="#">Hawai'i Volcanoes</a></li>
+<li>  <a href="#">Hot Springs</a></li>
+<li>	<a href="#">Isle Royale</a></li>
+ <li> <a href="#">Joshua Tree</a></li>
+<li>  <a href="#">Katmai</a></li>
+  <li><a href="#">Kenai Fjords</a></li>
+<li>	<a href="#">Kings Canyon</a></li>
+ <li> <a href="#">Kobuk Valley</a></li>
+ <li> <a href="#">Lake Clark</a></li>
+<li>  <a href="#">Lassen Volcanic</a></li>
+<li>	<a href="#">Mammoth Cave</a></li>
+<li>  <a href="#">Mesa Verde</a></li>
+  <li><a href="#">Mount Rainer</a></li>
+ <li> <a href="#">North Cascades</a></li>
+<li>	<a href="#">Olympic</a></li>
+<li>  <a href="#">Petrified Forest</a></li>
+ <li> <a href="#">Pinnacles</a></li>
+  <li><a href="#">Redwood</a></li>
+<li>	<a href="#">Rocky Mountain</a></li>
+<li>  <a href="#">Saguaro</a></li>
+  <li><a href="#">Sequoia</a></li>
+ <li> <a href="#">Contact</a></li>
+<li>	<a href="#">Shenandoah</a></li>
+ <li> <a href="#">Theodore Roosevelt</a></li>
+  <li><a href="#">Virign Islands</a></li>
+<li>  <a href="#">Voyageurs</a></li>
+<li>	  <a href="#">Wind Cave</a></li>
+<li>	<a href="#">Wrangell- St. Elias</a></li>
+ <li> <a href="#">Yellowstone</a></li>
+ <li> <a href="#">Yosemite</a></li>
+<li>  <a href="https://loopnova7305.github.io/upgraded-journey.github.io/Zion.html">Zion</a></li>
+	</ul>	
+
+	</ul>	
 </div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 <h1 align="center"> Your Guide to the National Parks of the U.S and Canada </h1>
@@ -347,5 +349,26 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+	<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+	<div>
+	
+	</div>
 		</body>
 </html>
