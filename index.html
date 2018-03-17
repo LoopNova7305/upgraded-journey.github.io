@@ -182,7 +182,7 @@ body {
 	<body>
 	
 <div id="mySidenav" class="sidenav">
-	<input type="text" id="nationalPark" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+	<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 	<ul id="nationalPark">
 		<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
 		<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
@@ -356,7 +356,7 @@ function myFunction() {
     var input, filter, ul, li, a, i;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
+    ul = document.getElementById("nationalPark");
     li = ul.getElementsByTagName("li");
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
