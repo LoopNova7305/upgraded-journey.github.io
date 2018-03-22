@@ -6,369 +6,182 @@
 
 	<style>
 		body {
-			background: url("https://www.backpacker.com/.image/t_share/MTUwMjg2MzU4NDE2NDY2OTYx/33438920365_150e2dd637_k.jpg");
-			background-size: cover; 
-     background-attachment: fixed;
-     background-size: 100% 100%;
-             color: black;
-     font-family: helvetica;
-			font-size: 72;
-		}
-		.container{
-			margin-top: 50px;
-		}
-		h1 {
-  font-weight: bold;
-  color: black;
-  font-size: 48px;
-}
-		.image {
-			margin-right: 2000px;
-			display: block;
-		}
-
-		* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-body {
-    font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-		ul {
-  list-style-type: none;
-}
-		</style>
-		</head>
-	<div class="container">
-			
-	<body>
-	
-<div id="mySidenav" class="sidenav">
-	<input type="text" id="nationalPark" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-	<ul id="nationalPark">
-		
-		<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
-		<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
-		<li><<a href="https://loopnova7305.github.io/upgraded-journey.github.io/Acadia.html">Acadia National Park</a></li>
-		<li><a href="#">American Samoa</a></li>
- <li> <a href="#">Arches</a></li>
- <li> <a href="#">Badlands</a></li>
-	<li><a href="#">Big Bend</a></li>
- <li> <a href="#">Biscayne</a></li>
- <li> <a href="#">Black Canyon of the Gunnison</a></li>
-  <li><a href="#">Bryce Canyon</a></li>
-	<li><a href="#">Canyonlands</a></li>
-<li> <a href="#">Capitol Reef</a></li>
-  <li><a href="#">Carlsbad Caverns</a></li>
-  <li><a href="#">Channel Islands</a></li>
-	<a href="#">Congaree</a></li>
- <li> <a href="#">Crater Lake</a></li>
-<li>  <a href="#">Cuyahoga Valley</a></li>
-  <li><a href="#">Death Valley</a></li>
-	<a href="#">Denali</a></li>
-  <li><a href="#">Dry Tortugas</a></li>
-  <li><a href="#">Everglades</a></li>
- <li> <a href="#">Gates of the Arctic</a></li>
-<li>	<a href="#">Gateway</a></li>
-<li>  <a href="https://loopnova7305.github.io/upgraded-journey.github.io/Glacier.html">Glacier</a></li>
-<li>  <a href="#">Glacier Bay</a></li>
-<li>  <a href="https://loopnova7305.github.io/upgraded-journey.github.io/GrandCanyon.html>Grand Canyon</a></li>
-<li>	<a href="#">Grand Teton</a></li>
-  <li><a href="#">Great Basin</a></li>
- <li> <a href="#" id="great sand dunes">Great Sand Dunds</a></li>
-  <li><a href="#">Great Smoky Mountains</a></li>
-<li>	<a href="#">Guadalupe Mountains</a></li>
-  <li><a href="#">Haleakalā </a></li>
- <li> <a href="#">Hawai'i Volcanoes</a></li>
-<li>  <a href="#">Hot Springs</a></li>
-<li>	<a href="#">Isle Royale</a></li>
- <li> <a href="#">Joshua Tree</a></li>
-<li>  <a href="#">Katmai</a></li>
-  <li><a href="#">Kenai Fjords</a></li>
-<li>	<a href="#">Kings Canyon</a></li>
- <li> <a href="#">Kobuk Valley</a></li>
- <li> <a href="#">Lake Clark</a></li>
-<li>  <a href="#">Lassen Volcanic</a></li>
-<li>	<a href="#">Mammoth Cave</a></li>
-<li>  <a href="#">Mesa Verde</a></li>
-  <li><a href="#">Mount Rainer</a></li>
- <li> <a href="#">North Cascades</a></li>
-<li>	<a href="#">Olympic</a></li>
-<li>  <a href="#">Petrified Forest</a></li>
- <li> <a href="#">Pinnacles</a></li>
-  <li><a href="#">Redwood</a></li>
-<li>	<a href="#">Rocky Mountain</a></li>
-<li>  <a href="#">Saguaro</a></li>
-  <li><a href="#">Sequoia</a></li>
- <li> <a href="#">Contact</a></li>
-<li>	<a href="#">Shenandoah</a></li>
- <li> <a href="#">Theodore Roosevelt</a></li>
-  <li><a href="#">Virign Islands</a></li>
-<li>  <a href="#">Voyageurs</a></li>
-<li>	  <a href="#">Wind Cave</a></li>
-<li>	<a href="#">Wrangell- St. Elias</a></li>
- <li> <a href="#">Yellowstone</a></li>
- <li> <a href="#">Yosemite</a></li>
-<li>  <a href="https://loopnova7305.github.io/upgraded-journey.github.io/Zion.html">Zion</a></li>
-	</ul>	
-
-	</ul>	
-</div>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-<h1 align="center"> Your Guide to the National Parks of the U.S and Canada </h1>
-		<!-- Slideshow container -->
-<div class="slideshow-container">
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 8</div>
-    <img src="https://www.nationalparks.org/sites/default/files/yellowstone-header.jpg" style="width:100%">
-    <div class="text">Yellowstone National Park</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 8</div>
-    <img src="http://www.pewtrusts.org/~/media/Post-Launch-Images/2017/01/iStock_72288773_XLARGE/istock_72288773_xlarge_16x9.jpg" style="width:100%">
-    <div class="text">Grand Canyon National Park</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 8</div>
-    <img src="https://www.nationalparks.org/sites/default/files/yosemite-merced.jpg" style="width:100%">
-    <div class="text">Yosemite National Park</div>
-  </div>
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 8</div>
-    <img src="https://i.imgur.com/aiwu3TB.jpg" style="width:100%">
-    <div class="text">Maligne Lake, Jasper National Park</div>
+ 			background: url("https://www.backpacker.com/.image/t_share/MTUwMjg2MzU4NDE2NDY2OTYx/33438920365_150e2dd637_k.jpg");
+-			background size: cover; 
++			background-size: cover; 
+      background-attachment: fixed;
+      background-size: 100% 100%;
+              color: black;
+@@ -177,75 +177,77 @@
+ 	<div class="container">
+ 			
+ 	<body>
+-		<script>
+-			function wpgood_nav_search( $items, $args ) {
+-    $items .= '<li>' . get_search_form( false ) . '</li>';
+-    return $items;
+-}
+-		</script>
++	
+ <div id="mySidenav" class="sidenav">
+-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+-  <a href="#">Acadia National Park</a>
+-  <a href="#">American Samoa</a>
+-  <a href="#">Arches</a>
+-  <a href="#">Badlands</a>
+-	<a href="#">Big Bend</a>
+-  <a href="#">Biscayne</a>
+-  <a href="#">Black Canyon of the Gunnison</a>
+-  <a href="#">Bryce Canyon</a>
+-	<a href="#">Canyonlands</a>
+-  <a href="#">Capitol Reef</a>
+-  <a href="#">Carlsbad Caverns</a>
+-  <a href="#">Channel Islands</a>
+-	<a href="#">Congaree</a>
+-  <a href="#">Crater Lake</a>
+-  <a href="#">Cuyahoga Valley</a>
+-  <a href="#">Death Valley</a>
+-	<a href="#">Denali</a>
+-  <a href="#">Dry Tortugas</a>
+-  <a href="#">Everglades</a>
+-  <a href="#">Gates of the Arctic</a>
+-	<a href="#">Gateway</a>
+-  <a href="#">Glacier</a>
+-  <a href="#">Glacier Bay</a>
+-  <a href="#">Grand Canyon</a>
+-	<a href="#">Grand Teton</a>
+-  <a href="#">Great Basin</a>
+-  <a href="#">Great Sand Dunds/a>
+-  <a href="#">Great Smoky Mountains</a>
+-	<a href="#">Guadalupe Mountains</a>
+-  <a href="#">Haleakalā </a>
+-  <a href="#">Hawai'i Volcanoes</a>
+-  <a href="#">Hot Springs</a>
+-	<a href="#">Isle Royale</a>
+-  <a href="#">Joshua Tree</a>
+-  <a href="#">Katmai</a>
+-  <a href="#">Kenai Fjords</a>
+-	<a href="#">Kings Canyon</a>
+-  <a href="#">Kobuk Valley</a>
+-  <a href="#">Lake Clark</a>
+-  <a href="#">Lassen Volcanic</a>
+-	<a href="#">Mammoth Cave</a>
+-  <a href="#">Mesa Verde</a>
+-  <a href="#">Mount Rainer</a>
+-  <a href="#">North Cascades</a>
+-	<a href="#">Olympic</a>
+-  <a href="#">Petrified Forest</a>
+-  <a href="#">Pinnacles</a>
+-  <a href="#">Redwood</a>
+-	<a href="#">Rocky Mountain</a>
+-  <a href="#">Saguaro</a>
+-  <a href="#">Sequoia</a>
+-  <a href="#">Contact</a>
+-	<a href="#">Shenandoah</a>
+-  <a href="#">Theodore Roosevelt</a>
+-  <a href="#">Virign Islands</a>
+-  <a href="#">Voyageurs</a>
+-	  <a href="#">Wind Cave</a>
+-	<a href="#">Wrangell- St. Elias</a>
+-  <a href="#">Yellowstone</a>
+-  <a href="#">Yosemite</a>
+-  <a href="https://loopnova7305.github.io/upgraded-journey.github.io/Zion.html">Zion</a>
++	<input type="text" id="nationalPark" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
++	<ul id="nationalPark">
++		
++		<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
++		<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
++		<li><<a href="#">Acadia National Park</a></li>
++		<li><a href="#">American Samoa</a></li>
++ <li> <a href="#">Arches</a></li>
++ <li> <a href="#">Badlands</a></li>
++	<li><a href="#">Big Bend</a></li>
++ <li> <a href="#">Biscayne</a></li>
++ <li> <a href="#">Black Canyon of the Gunnison</a></li>
++  <li><a href="#">Bryce Canyon</a></li>
++	<li><a href="#">Canyonlands</a></li>
++<li> <a href="#">Capitol Reef</a></li>
++  <li><a href="#">Carlsbad Caverns</a></li>
++  <li><a href="#">Channel Islands</a></li>
++	<a href="#">Congaree</a></li>
++ <li> <a href="#">Crater Lake</a></li>
++<li>  <a href="#">Cuyahoga Valley</a></li>
++  <li><a href="#">Death Valley</a></li>
++	<a href="#">Denali</a></li>
++  <li><a href="#">Dry Tortugas</a></li>
++  <li><a href="#">Everglades</a></li>
++ <li> <a href="#">Gates of the Arctic</a></li>
++<li>	<a href="#">Gateway</a></li>
++<li>  <a href="#">Glacier</a></li>
++<li>  <a href="#">Glacier Bay</a></li>
++<li>  <a href="#">Grand Canyon</a></li>
++<li>	<a href="#">Grand Teton</a></li>
++  <li><a href="#">Great Basin</a></li>
++ <li> <a href="#" id="great sand dunes">Great Sand Dunds</a></li>
++  <li><a href="#">Great Smoky Mountains</a></li>
++<li>	<a href="#">Guadalupe Mountains</a></li>
++  <li><a href="#">Haleakalā </a></li>
++ <li> <a href="#">Hawai'i Volcanoes</a></li>
++<li>  <a href="#">Hot Springs</a></li>
++<li>	<a href="#">Isle Royale</a></li>
++ <li> <a href="#">Joshua Tree</a></li>
++<li>  <a href="#">Katmai</a></li>
++  <li><a href="#">Kenai Fjords</a></li>
++<li>	<a href="#">Kings Canyon</a></li>
++ <li> <a href="#">Kobuk Valley</a></li>
++ <li> <a href="#">Lake Clark</a></li>
++<li>  <a href="#">Lassen Volcanic</a></li>
++<li>	<a href="#">Mammoth Cave</a></li>
++<li>  <a href="#">Mesa Verde</a></li>
++  <li><a href="#">Mount Rainer</a></li>
++ <li> <a href="#">North Cascades</a></li>
++<li>	<a href="#">Olympic</a></li>
++<li>  <a href="#">Petrified Forest</a></li>
++ <li> <a href="#">Pinnacles</a></li>
++  <li><a href="#">Redwood</a></li>
++<li>	<a href="#">Rocky Mountain</a></li>
++<li>  <a href="#">Saguaro</a></li>
++  <li><a href="#">Sequoia</a></li>
++ <li> <a href="#">Contact</a></li>
++<li>	<a href="#">Shenandoah</a></li>
++ <li> <a href="#">Theodore Roosevelt</a></li>
++  <li><a href="#">Virign Islands</a></li>
++<li>  <a href="#">Voyageurs</a></li>
++<li>	  <a href="#">Wind Cave</a></li>
++<li>	<a href="#">Wrangell- St. Elias</a></li>
++ <li> <a href="#">Yellowstone</a></li>
++ <li> <a href="#">Yosemite</a></li>
++<li>  <a href="https://loopnova7305.github.io/upgraded-journey.github.io/Zion.html">Zion</a></li>
++	</ul>	
++
++	</ul>	
  </div>
-
-<div class="mySlides fade">
-    <div class="numbertext">5 / 8</div>
-    <img src="https://www.national-park.com/wp-content/uploads/2016/04/Welcome-to-Acadia-National-Park.jpeg" style="width:100%">
-    <div class="text">Acadia National Park</div>
-  </div>
-
-<div class="mySlides fade">
-    <div class="numbertext">6 / 8</div>
-    <img src="https://www.nationalparks.org/sites/default/files/styles/wide_1x/public/arches_420020.JPG?itok=fc-ZBEKU" style="width:100%">
-    <div class="text">Arches National Park</div>
-</div>
-<div class="mySlides fade">
-    <div class="numbertext">7 / 8</div>
-    <img src="https://www.nps.gov/glac/planyourvisit/images/stmaryteal_1.jpg?maxwidth=1200&autorotate=false" style="width:100%">
-    <div class="text">Glacier National Park</div>
-</div>
-<div class="mySlides fade">
-    <div class="numbertext">8 / 8</div>
-    <img src="https://i.imgur.com/A4bfWwe.jpg" style="width:100%">
-    <div class="text">Banff National Park, Canada</div>
-  </div>
-<!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-	
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1} 
-    slides[slideIndex-1].style.display = "block"; 
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-
-</script> 
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-	<script>
-function myFunction() {
-    var input, filter, ul, li, a, i;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("nationalPark");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-
-        }
-    }
-}
-</script> 
-
-	<div>
-	
-	</div>
-		</body>
-</html>
+ <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+ <h1 align="center"> Your Guide to the National Parks of the U.S and Canada </h1>
+@@ -347,5 +349,26 @@ <h1 align="center"> Your Guide to the National Parks of the U.S and Canada </h1>
+     document.getElementById("mySidenav").style.width = "0";
+ }
+ </script>
++	<script>
++function myFunction() {
++    var input, filter, ul, li, a, i;
++    input = document.getElementById("myInput");
++    filter = input.value.toUpperCase();
++    ul = document.getElementById("myUL");
++    li = ul.getElementsByTagName("li");
++    for (i = 0; i < li.length; i++) {
++        a = li[i].getElementsByTagName("a")[0];
++        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
++            li[i].style.display = "";
++        } else {
++            li[i].style.display = "none";
++
++        }
++    }
++}
++</script>
++	<div>
++	
++	</div>
+ 		</body>
+ </html>
