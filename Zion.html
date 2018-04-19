@@ -1,197 +1,169 @@
-ver; 
-      background-attachment: fixed;
-      background-size: 100% 100%;
--	   color: white;
-+	   color: black;
-      font-family: helvetica;
- 			font-size: 24;
- 	}
--			h1 {
--  font-weight: bold;
--  color: black;
--  font-size: 48px;
-+	* {box-sizing:border-box}
-+
-+/* Slideshow container */
-+.slideshow-container {
-+  max-width: 1000px;
-+  position: relative;
-+  margin: auto;
- }
--			h2 {
--  font-weight: bold;
--  color: black;
--  font-size: 24px;
-+
-+/* Hide the images by default */
-+.mySlides {
-+    display: none;
- }
--	   </style>
-+	/* Caption text */
-+.text {
-+  color: #f2f2f2;
-+  font-size: 15px;
-+  padding: 8px 12px;
-+  position: absolute;
-+  bottom: 8px;
-+  width: 100%;
-+  text-align: center;
-+}
-+
-+/* Number text (1/3 etc) */
-+.numbertext {
-+  color: #f2f2f2;
-+  font-size: 12px;
-+  padding: 8px 12px;
-+  position: absolute;
-+  top: 0;
-+}
-+	.active, .dot:hover {
-+  background-color: #717171;
-+}
-+
-+/* Fading animation */
-+.fade {
-+  -webkit-animation-name: fade;
-+  -webkit-animation-duration: 1.5s;
-+  animation-name: fade;
-+  animation-duration: 1.5s;
-+}
-+
-+@-webkit-keyframes fade {
-+  from {opacity: .4} 
-+  to {opacity: 1}
-+}
-+
-+@keyframes fade {
-+  from {opacity: .4} 
-+  to {opacity: 1}
-+}
-+	ul {
-+    list-style-type: none;
-+    margin: 0;
-+    padding: 0;
-+    overflow: hidden;
-+    background-color: #333;
-+}
-+
-+li {
-+    float: left;
-+}
-+
-+li a, .dropbtn {
-+    display: inline-block;
-+    color: white;
-+    text-align: center;
-+    padding: 14px 16px;
-+    text-decoration: none;
-+}
-+
-+li a:hover, .dropdown:hover .dropbtn {
-+    background-color: red;
-+}
-+
-+li.dropdown {
-+    display: inline-block;
-+}
-+
-+.dropdown-content {
-+    display: none;
-+    position: absolute;
-+    background-color: #f9f9f9;
-+    min-width: 160px;
-+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-+    z-index: 1;
-+}
-+
-+.dropdown-content a {
-+    color: black;
-+    padding: 12px 16px;
-+    text-decoration: none;
-+    display: block;
-+    text-align: left;
-+}
-+
-+.dropdown-content a:hover {background-color: #f1f1f1}
-+
-+.dropdown:hover .dropdown-content {
-+    display: block;
-+}
-+	</style>
- 	</head>   
- <body>
--<h1>Zion National Park <h2>
--<ul>
--<li> The park is named after the Hebrew word, “Zion.” The park is located in Utah. This word translates as “a place of peace and relaxation.” </li>
--<li> In Zion National Park there is an area called Weeping Rock.  In this area, the water that can be seen oozing from the rock surfaces has taken more than 1,000 years to travel through the stone from its source in a natural, underground spring.
--<li> One of the word’s largest freestanding natural arches is located in Zion’s backcountry.  Kolob Arch measures about 287 feet in length. </li>
--<li> Some trails to visit in Zion include Angel's Landing, a strenuous to the top of a rock formation, and the Narrows, a 16 Mile Trail (though you don't need to hike the whole trail) through a river in a canyon. </li>
--<ul>
--<img src="https://cost2drive.s3.amazonaws.com/uploads/2012/03/zion-national-park-map.jpg">
--	<h2> Hotels near Zion National Park </h2>
--		<ul>
--			<li> Cliffrose Hotel and Lodge </li>
--	</ul>
--	<p> The Cliffrose Hotel and Lodge is an excellent Hotel just walking distance from Zion.  It offers excellent amentities, and has a 4.7 rating on Google. It costs $273 a night to stay at Cliffrose, and it's well worth it.  </p>
--	<img src="https://i.imgur.com/XzlINcD.jpg">
--</body>
-+<h1 align="center"> Zion National Park </h1>
-+	<ul>
-+  <li class="dropdown">
-+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
-+    <div class="dropdown-content">
-+      <a href="#">History and Culture</a>
-+      <a href="#">Geology and Nature</a>
-+      <a href="#">Photos</a>
-+  <li><a href="#news">News</a></li>
-+  <li class="dropdown">
-+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">What to do</a>
-+    <div class="dropdown-content">
-+      <a href="#">Where to Stay</a>
-+      <a href="#">Points of Interest</a>
-+      <a href="#">More</a>
-+		<li> <a href="https://loopnova7305.github.io/upgraded-journey.github.io/">Main Page</a></li>
-+    </div>
-+  </li>
-+</ul>
-+	  <h3> Follow the paths where ancient native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures. From the mighty walls of the Narrows to the majestic heights of Angel's Landing, this is one adventure you will never forget.  </h3>
-+	  <!-- Slideshow container -->
-+<div class="slideshow-container">
-+
-+  <!-- Full-width images with number and caption text -->
-+  <div class="mySlides fade">
-+    <div class="numbertext">1 / 3</div>
-+    <img src="https://www.earthtrekkers.com/wp-content/uploads/2017/05/Angels-Landing-Midday-1129x752.jpg" style="width:100%">
-+    <div class="text">Angel's Landing</div>
-+  </div>
-+
-+  <div class="mySlides fade">
-+    <div class="numbertext">2 / 3</div>
-+    <img src="https://www.citrusmilo.com/zion2007/joebraun_narrows01.jpg" style="width:100%">
-+    <div class="text">Zion Narrows</div>
-+  </div>
-+
-+  <div class="mySlides fade">
-+    <div class="numbertext">3 / 3</div>
-+    <img src="https://utahcdn.azureedge.net/media/15892365/web2000-rememberingkathryn_davidpettit.jpg?anchor=center&mode=crop&width=875&height=583&rnd=131423665140000000" style="width:100%">
-+    <div class="text">Aerial View of Zion</div>
-+  </div>
-+	<script> 
-+	var slideIndex = 0;
-+showSlides();
-+
-+function showSlides() {
-+    var i;
-+    var slides = document.getElementsByClassName("mySlides");
-+    for (i = 0; i < slides.length; i++) {
-+        slides[i].style.display = "none"; 
-+    }
-+    slideIndex++;
-+    if (slideIndex > slides.length) {slideIndex = 1} 
-+    slides[slideIndex-1].style.display = "block"; 
-+    setTimeout(showSlides, 2000); // Change image every 2 seconds
-+}
-+	</script>
-+	</body>
- </html>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Zion National Park</title>
+<style>
+body {
+	background: url("https://i.imgur.com/KjgW53P.jpg");	   
+background-size: cover; 
+     background-attachment: fixed;
+     background-size: 100% 100%;
+	   color: black;
+     font-family: helvetica;
+			font-size: 24;
+	}
+	* {box-sizing:border-box}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+	/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+	.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+	</style>
+	</head>   
+<body>
+<h1 align="center"> Zion National Park </h1>
+	<ul>
+  <li class="dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+    <div class="dropdown-content">
+      <a href="#">History and Culture</a>
+      <a href="#">Geology and Nature</a>
+      <a href="#">Photos</a>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown-content">
+	  <a href="https://www.nps.gov/zion/learn/news/index.htm">New Front Page </a>
+	  <a href="https://www.nps.gov/zion/learn/news/newsreleases.htm">Zion News Releases </a>
+	  <a href="https://www.nps.gov/zion/learn/news/newspaper.htm"> Zion Newspaper
+	  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">What to do</a>
+    <div class="dropdown-content">
+          <li><a href="#">What to do</a>
+          <a href="#">Where to Stay</a>
+      <a href="#">Points of Interest</a>
+      <a href="#">More</a>
+		<li> <a href="https://loopnova7305.github.io/upgraded-journey.github.io/">Main Page</a></li>
+    </div>
+  </li>
+</ul>
+	  <h3> Follow the paths where ancient native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures. From the mighty walls of the Narrows to the majestic heights of Angel's Landing, this is one adventure you will never forget.  </h3>
+	  <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="https://www.earthtrekkers.com/wp-content/uploads/2017/05/Angels-Landing-Midday-1129x752.jpg" style="width:100%">
+    <div class="text">Angel's Landing</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="https://www.citrusmilo.com/zion2007/joebraun_narrows01.jpg" style="width:100%">
+    <div class="text">Zion Narrows</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="https://utahcdn.azureedge.net/media/15892365/web2000-rememberingkathryn_davidpettit.jpg?anchor=center&mode=crop&width=875&height=583&rnd=131423665140000000" style="width:100%">
+    <div class="text">Aerial View of Zion</div>
+  </div>
+	<script> 
+	var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+	</script>
+	</body>
+</html>
